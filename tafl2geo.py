@@ -15,9 +15,17 @@ if __name__ == '__main__':
     with data_defn.open("r") as config:
         cfg = yaml.load(config)
 
+        # inputs
         data_url = Path(cfg['url'])
         if not data_url.exists():
             sys.exit("Data source not found: %s" % data_url.as_posix())
+
+        # output
+        out_cfg = cfg['output']
+        out_path = Path(out_cfg['path'])
+        ogr_driver = out_cfg['format']
+
+        # deal with the data
         data_headers = [field['name'] for field in cfg['fields']]
 
         # read in a little bit of data
@@ -28,4 +36,4 @@ if __name__ == '__main__':
         crs = {'init': 'epsg:4326'}
         gdf = GeoDataFrame(df, crs=crs, geometry=geometry)
 
-        gdf.to_file(cfg['output'])
+        gdf.to_file(out_path, driver=ogr_driver)

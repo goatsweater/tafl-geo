@@ -1,6 +1,8 @@
 name: Spectrum Management System (SMS) Authorization Data Extract
 url: /Users/goatsweater/Projects/tower_map/TAFL_LandMobile-LTAF_MobileTerrestre_2018-07-29.csv
-output: ../tafl.shp
+output:
+  path: ../tafl.shp
+  format: ESRI Shapefile
 fields:
   - name: Radio Type
     type: String
