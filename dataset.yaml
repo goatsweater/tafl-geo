@@ -1,0 +1,187 @@
+name: Spectrum Management System (SMS) Authorization Data Extract
+url: /Users/goatsweater/Projects/tower_map/TAFL_LandMobile-LTAF_MobileTerrestre_2018-07-29.csv
+output: ../tafl.shp
+fields:
+  - name: Radio Type
+    type: String
+    size: 2
+  - name: Frequency
+    type: Real
+    size: 4
+  - name: Frequency record identifier
+    type: String
+    size: 10
+  - name: Regulatory service
+    type: String
+    size: 10
+  - name: Communication type
+    type: String
+    size: 4
+  - name: Conformity to frequency plan
+    type: String
+    size: 10
+  - name: Frequency allocation name
+    type: String
+    size: 50
+  - name: Channel
+    type: String
+    size: 10
+  - name: International coordination number
+    type: String
+    size: 20
+  - name: Analog digital
+    type: String
+    size: 1
+  - name: Occupied bandwidth
+    type: String
+    size: 20
+  - name: Designation of emission
+    type: String
+    size: 20
+  - name: Modulation type
+    type: String
+    size: 13
+  - name: Filtration installed
+    type: String
+    size: 5
+  - name: TX effective radiated power
+    type: String
+    size: 10
+  - name: TX transmitter power
+    type: String
+    size: 40
+  - name: Total losses
+    type: String
+    size: 10
+  - name: Analog capacity
+    type: String
+    size: 20
+  - name: Digital capacity
+    type: String
+    size: 20
+  - name: RX unfaded received signal level
+    type: String
+    size: 15
+  - name: RX threshold signal level for BER
+    type: String
+    size: 15
+  - name: Manufacturer
+    type: String
+    size: 70
+  - name: Model number
+    type: String
+    size: 100
+  - name: Antenna gain
+    type: String
+    size: 15
+  - name: Antenna pattern
+    type: String
+    size: 6
+  - name: Half power beam width
+    type: String
+    size: 4
+  - name: Front back ratio
+    type: String
+    size: 5
+  - name: Polarization
+    type: String
+    size: 1
+  - name: Height AGL
+    type: String
+    size: 10
+  - name: Azimuth main lobe
+    type: String
+    size: 10
+  - name: Vertical elevation angle
+    type: String
+    size: 10
+  - name: Station location
+    type: String
+    size: 200
+  - name: Licensee station reference
+    type: String
+    size: 100
+  - name: Call sign
+    type: String
+    size: 10
+  - name: Type of station
+    type: String
+    size: 2
+  - name: ITU class
+    type: String
+    size: 2
+  - name: Station cost category
+    type: String
+    size: 2
+  - name: Number identical stations
+    type: String
+    size: 5
+  - name: Reference id
+    type: String
+    size: 100
+  - name: Province
+    type: String
+    size: 2
+  - name: Latitude
+    type: Real
+    size: 12
+  - name: Longitude
+    type: Real
+    size: 12
+  - name: Ground elevation MSR
+    type: String
+    size: 10
+  - name: Antenna structure height AGL
+    type: String
+    size: 10
+  - name: Congestion zone
+    type: String
+    size: 1
+  - name: Radius of operation
+    type: String
+    size: 7
+  - name: Satellite name
+    type: String
+    size: 1
+  - name: Authorization number
+    type: String
+    size: 13
+  - name: Service
+    type: String
+    size: 1
+  - name: Subservice
+    type: String
+    size: 3
+  - name: License type
+    type: String
+    size: 1
+  - name: Authorization status
+    type: String
+    size: 2
+  - name: In service date
+    type: Date
+    size: 10
+  - name: Account number
+    type: String
+    size: 12
+  - name: Licensee name
+    type: String
+    size: 200
+  - name: Licensee address
+    type: String
+    size: 200
+  - name: Operational status
+    type: String
+    size: 1
+  - name: Station class
+    type: String
+    size: 1
+  - name: Horizontal power
+    type: String
+    size: 50
+  - name: Vertical power
+    type: String
+    size: 50
+  - name: Standby transmitter information
+    type: String
+    size: 1
