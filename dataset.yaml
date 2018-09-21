@@ -1,189 +1,128 @@
 name: Spectrum Management System (SMS) Authorization Data Extract
 url: /Users/goatsweater/Projects/tower_map/TAFL_LandMobile-LTAF_MobileTerrestre_2018-07-29.csv
 output:
-  path: ../tafl.shp
-  format: ESRI Shapefile
+  path: ../tafl.gpkg
+  format: GPKG
 fields:
   - name: Radio Type
-    type: String
-    size: 2
+    type: category
   - name: Frequency
-    type: Real
-    size: 4
+    type: float64
   - name: Frequency record identifier
-    type: String
-    size: 10
+    type: float64
   - name: Regulatory service
-    type: String
-    size: 10
+    type: float64
   - name: Communication type
-    type: String
-    size: 4
+    type: category
   - name: Conformity to frequency plan
-    type: String
-    size: 10
+    type: category
   - name: Frequency allocation name
-    type: String
-    size: 50
+    type: object
   - name: Channel
-    type: String
-    size: 10
+    type: object
   - name: International coordination number
-    type: String
-    size: 20
+    type: object
   - name: Analog digital
-    type: String
-    size: 1
+    type: category
   - name: Occupied bandwidth
-    type: String
-    size: 20
+    type: object
   - name: Designation of emission
-    type: String
-    size: 20
+    type: object
   - name: Modulation type
-    type: String
-    size: 13
+    type: category
   - name: Filtration installed
-    type: String
-    size: 5
+    type: category
   - name: TX effective radiated power
-    type: String
-    size: 10
+    type: object
   - name: TX transmitter power
-    type: String
-    size: 40
+    type: object
   - name: Total losses
-    type: String
-    size: 10
+    type: float64
   - name: Analog capacity
-    type: String
-    size: 20
+    type: object
   - name: Digital capacity
-    type: String
-    size: 20
+    type: object
   - name: RX unfaded received signal level
-    type: String
-    size: 15
+    type: object
   - name: RX threshold signal level for BER
-    type: String
-    size: 15
+    type: object
   - name: Manufacturer
-    type: String
-    size: 70
+    type: object
   - name: Model number
-    type: String
-    size: 100
+    type: object
   - name: Antenna gain
-    type: String
-    size: 15
+    type: float64
   - name: Antenna pattern
-    type: String
-    size: 6
+    type: category
   - name: Half power beam width
-    type: String
-    size: 4
+    type: object
   - name: Front back ratio
-    type: String
-    size: 5
+    type: float64
   - name: Polarization
-    type: String
-    size: 1
+    type: category
   - name: Height AGL
-    type: String
-    size: 10
+    type: float64
   - name: Azimuth main lobe
-    type: String
-    size: 10
+    type: object
   - name: Vertical elevation angle
-    type: String
-    size: 10
+    type: float64
   - name: Station location
-    type: String
-    size: 200
+    type: object
   - name: Licensee station reference
-    type: String
-    size: 100
+    type: object
   - name: Call sign
-    type: String
-    size: 10
+    type: object
   - name: Type of station
-    type: String
-    size: 2
+    type: float64
   - name: ITU class
-    type: String
-    size: 2
+    type: category
   - name: Station cost category
-    type: String
-    size: 2
+    type: float64
   - name: Number identical stations
-    type: String
-    size: 5
+    type: object
   - name: Reference id
-    type: String
-    size: 100
+    type: object
   - name: Province
-    type: String
-    size: 2
+    type: category
   - name: Latitude
-    type: Real
-    size: 12
+    type: float64
   - name: Longitude
-    type: Real
-    size: 12
+    type: float64
   - name: Ground elevation MSR
-    type: String
-    size: 10
+    type: object
   - name: Antenna structure height AGL
-    type: String
-    size: 10
+    type: float64
   - name: Congestion zone
-    type: String
-    size: 1
+    type: category
   - name: Radius of operation
-    type: String
-    size: 7
+    type: object
   - name: Satellite name
-    type: String
-    size: 1
+    type: float64
   - name: Authorization number
-    type: String
-    size: 13
+    type: object
   - name: Service
-    type: String
-    size: 1
+    type: category
   - name: Subservice
-    type: String
-    size: 3
+    type: category
   - name: License type
-    type: String
-    size: 1
+    type: category
   - name: Authorization status
-    type: String
-    size: 2
+    type: category
   - name: In service date
-    type: Date
-    size: 10
+    type: object
   - name: Account number
-    type: String
-    size: 12
+    type: object
   - name: Licensee name
-    type: String
-    size: 200
+    type: object
   - name: Licensee address
-    type: String
-    size: 200
+    type: object
   - name: Operational status
-    type: String
-    size: 1
+    type: category
   - name: Station class
-    type: String
-    size: 1
+    type: category
   - name: Horizontal power
-    type: String
-    size: 50
+    type: object
   - name: Vertical power
-    type: String
-    size: 50
+    type: object
   - name: Standby transmitter information
-    type: String
-    size: 1
+    type: float64
